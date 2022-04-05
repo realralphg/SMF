@@ -85,20 +85,32 @@
           </div>
         </div>
         <div class="row q-py-sm justify-center">
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <q-btn
+          <!-- <div class="col-md-3 col-sm-6 col-xs-12"> -->
+            <div class="text-caption text-grey-6">
+              <q-btn class="q-ma-sm text-green" no-caps small outline icon="shopping_cart" type="a" href="https://selar.co/m/JoeAdejo/" target="_blank">
+                <span class="q-pl-sm">Shop Here</span>
+              </q-btn> 
+            </div>       
+
+            <div class="text-caption text-grey-6">
+              <q-btn class="q-ma-sm text-green" no-caps small outline icon="redeem" type="a" href="https://paystack.com/pay/safemotherhoodfdn/" target="_blank">
+                <span class="q-pl-sm">Donate Here</span>
+              </q-btn> 
+            </div>   
+            <!-- <q-btn
               outline
               color="black"
-              class="text-black text-capitalize q-my-sm"
-              >Contact Us For Full Books</q-btn
-            >
-            <span class="q-mx-sm text-weight-bold text-h6">OR</span>
-            <q-btn
+              class="text-white text-capitalize"
+              label="Shop Here"
+            /> -->
+            <!-- <span class="q-mx-sm text-weight-bold text-h6">OR</span> -->
+            <!-- <q-btn
+              outline
               color="black"
               class="text-white text-capitalize"
               label="Donate Here"
-            />
-          </div>
+            /> -->
+          <!-- </div> -->
           <!-- <div class="col">
           </div>
           <div class="col">

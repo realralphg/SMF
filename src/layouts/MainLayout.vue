@@ -33,6 +33,9 @@
             <q-item-label>{{ link.label }}</q-item-label>
           </div>
         </q-btn>
+        <q-btn class="q-ma-sm text-green shop-btn" no-caps small outline icon="shopping_cart" type="a" href="https://selar.co/m/JoeAdejo/" target="_blank">
+          <span class="q-pl-sm">Shop</span>
+        </q-btn>         
 
         <q-btn
           class="button"
@@ -52,7 +55,7 @@
           <div class="row">
             <div class="col-md-6 col-sm-12 col-xs-12 q-pt-md">
               <div class="text-body1">
-                © 2020 Safe Motherhood Foundation. All rights reserved.
+                © 2022 Safe Motherhood Foundation. All rights reserved.
               </div>
               <div class="text-body1">
                 <img
@@ -88,7 +91,7 @@
                     class="text-body1 q-mt-md cursor-pointer"
                   >
                     Products
-                  </div>
+                  </div>               
                   <div
                     @click="$router.push('/donate')"
                     class="text-body1 q-mt-md cursor-pointer"
@@ -124,7 +127,7 @@
       </div>
     </q-footer>
 
-    <q-drawer v-model="leftDrawerOpen" :width="250">
+    <q-drawer v-model="leftDrawerOpen" :breakpoint="720" :width="250">
       <q-list>
         <q-item-label header class="text-brown text-h5 text-weight-light">
           SMF
@@ -147,6 +150,9 @@
             <q-item-label>{{ link.label }}</q-item-label>
           </q-item-section>
         </q-item>
+        <q-btn class="q-ma-sm text-brown" no-caps small outline icon="shopping_cart" type="a" href="https://selar.co/m/JoeAdejo/" target="_blank">
+          <span class="q-pl-sm">Shop</span>
+        </q-btn> 
       </q-list>
     </q-drawer>
 
@@ -181,7 +187,6 @@ export default {
           icon: "money",
           to: "/product",
         },
-
         {
           label: "Donate",
           icon: "favorite",
@@ -214,6 +219,10 @@ export default {
   .toolbar-title {
     display: none;
   }
+
+  .shop-btn{
+    display: none;
+  }
 }
 
 .q-router-link--exact-active {
@@ -227,5 +236,16 @@ export default {
 a {
   text-decoration: none;
   color: #26a69a;
+}
+
+
+@media (max-width: 600px) {
+  #breadcrumbs {
+    display: none;
+  }
+
+  .toolbar-title {
+    display: none;
+  }
 }
 </style>
